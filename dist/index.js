@@ -70,7 +70,7 @@ class JackdClient {
                 invalidResponse(ascii);
             }
         ]);
-        this.release = this.createCommandHandler((id, { priority, delay } = {}) => {
+        this.release = this.createCommandHandler((id, priority = 10, delay) => {
             assert(id);
             return Buffer.from(`release ${id} ${priority || 0} ${delay || 0}\r\n`, 'ascii');
         }, [
