@@ -1,5 +1,5 @@
 {
-  "name": "jackd",
+  "name": "@markblah/jackd",
   "version": "2.1.2",
   "description": "Modern beanstalkd client for Node.js",
   "main": "dist/index.js",
